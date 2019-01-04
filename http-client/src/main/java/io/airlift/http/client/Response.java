@@ -49,4 +49,19 @@ public interface Response
 
     InputStream getInputStream()
             throws IOException;
+
+    default boolean supportsGetBuffers()
+    {
+        return false;
+    }
+
+    default long getTotalBytes()
+    {
+        return -1;
+    }
+
+    default List<byte[]> getBuffers()
+    {
+        throw new UnsupportedOperationException();
+    }
 }
