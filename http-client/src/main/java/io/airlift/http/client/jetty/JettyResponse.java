@@ -85,7 +85,7 @@ class JettyResponse
     {
         return totalBytes;
     }
-    
+
     @Override
     public String toString()
     {
