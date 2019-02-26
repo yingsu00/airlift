@@ -22,5 +22,6 @@ import java.nio.ByteBuffer;
 public interface ResponseListener
 {
     void onContent(ByteBuffer content);
+
     InputStream onComplete();
 }
